@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "titulo": "Registros Akáshicos Nivel 1",
+    "descripcion": "Conectá con tu alma y accedé a la información de vidas pasadas.",
+    "precio": 15000,
+    "imagen": "archivos/img/akashicos1.jpg"
+  },
+  {
+    "id": 2,
+    "titulo": "Reiki Usui Nivel 1",
+    "descripcion": "Aprendé a canalizar energía sanadora a través de tus manos.",
+    "precio": 13000,
+    "imagen": "archivos/img/reiki1.jpg"
+  },
+  {
+    "id": 3,
+    "titulo": "Activación de la Glándula Pineal",
+    "descripcion": "Despertá tu visión interior y ampliá tu percepción espiritual.",
+    "precio": 14000,
+    "imagen": "archivos/img/pineal.jpg"
+  },
+  {
+    "id": 4,
+    "titulo": "Curso de Tarot Lenormand",
+    "descripcion": "Explorá el lenguaje simbólico del oráculo de Lenormand.",
+    "precio": 16000,
+    "imagen": "archivos/img/lenormand.jpg"
+  },
+  {
+    "id": 5,
+    "titulo": "Oráculos de Ángeles",
+    "descripcion": "Aprendé a leer mensajes de tus guías celestiales.",
+    "precio": 12500,
+    "imagen": "archivos/img/angeles.jpg"
+  },
+  {
+    "id": 6,
+    "titulo": "Terapias Holísticas Integradas",
+    "descripcion": "Curso intensivo con herramientas de sanación energética y emocional.",
+    "precio": 18000,
+    "imagen": "archivos/img/holisticas.jpg"
+  },
+  {
+    "id": 7,
+    "titulo": "Curso de Péndulo Hebreo",
+    "descripcion": "Técnica vibracional para limpiar y armonizar el campo energético.",
+    "precio": 15000,
+    "imagen": "archivos/img/pendulo.jpg"
+  },
+  {
+    "id": 8,
+    "titulo": "Curso de Magia Elemental",
+    "descripcion": "Conectá con los cuatro elementos y potenciá tus rituales.",
+    "precio": 17000,
+    "imagen": "archivos/img/magia.jpg"
+  },
+  {
+    "id": 9,
+    "titulo": "Canalización Superior y Mediumnidad",
+    "descripcion": "Aprendé a recibir mensajes desde planos elevados de conciencia.",
+    "precio": 20000,
+    "imagen": "archivos/img/canalizacion.jpg"
+  },
+  {
+    "id": 10,
+    "titulo": "Tarot Evolutivo",
+    "descripcion": "Un camino de autoconocimiento profundo a través de los arcanos.",
+    "precio": 16000,
+    "imagen": "archivos/img/evolutivo.jpg"
+  },
+  {
+    "id": 11,
+    "titulo": "Limpieza Energética con Sonido",
+    "descripcion": "Técnicas vibracionales con cuencos, campanas y frecuencias.",
+    "precio": 14000,
+    "imagen": "archivos/img/sonido.jpg"
+  },
+  {
+    "id": 12,
+    "titulo": "Numerología del Alma",
+    "descripcion": "Descubrí los números que guían tu propósito espiritual.",
+    "precio": 15500,
+    "imagen": "archivos/img/numerologia.jpg"
+  }
+]

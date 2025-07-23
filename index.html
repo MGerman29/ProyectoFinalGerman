@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simulador Ecommerce Espiritual </title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+  <header>
+    <h1>✨ Cursos Espirituales ✨</h1>
+    <div class="auth-buttons">
+      <button id="btnLogin">Iniciar Sesión</button>
+      <button onclick="location.href='registro.html'">Registrarse</button>
+      <button id="btnCerrarSesion" style="display:none;">Cerrar Sesión</button>
+      <span id="userWelcome" class="hidden"></span>
+    </div>
+  </header>
+
+  <main>
+    <section id="catalogo" class="contenedor-cursos"></section>
+    <aside id="carrito" class="carrito">
+      <h2>🛒 Tu Carrito</h2>
+      <ul id="lista-carrito"></ul>
+      <p>Total: $<span id="total">0</span></p>
+      <button id="finalizarCompra">Finalizar Compra</button>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cursos de Luz Interior</p>
+  </footer>
+
+  <!-- Login modal -->
+  <div class="modal" id="loginModal">
+    <form id="loginForm" class="modal-content">
+      <h2>Iniciar Sesión</h2>
+      <input type="text" id="usuario" placeholder="Usuario" required />
+      <input type="password" id="password" placeholder="Contraseña" required />
+      <button type="submit">Ingresar</button>
+      <p><a href="#" id="recuperarClave">¿Olvidaste tu contraseña?</a></p>
+    </form>
+  </div>
+
+  <!-- Recuperar contraseña modal -->
+  <div class="modal" id="recuperarModal">
+    <form id="recuperarForm" class="modal-content">
+      <h2>Recuperar contraseña</h2>
+      <input type="email" id="emailRecuperar" placeholder="Ingresa tu email" required />
+      <button type="submit">Enviar enlace</button>
+      <button type="button" id="cerrarRecuperar">Cancelar</button>
+    </form>
+  </div>
+
+  <script src="javascript.js"></script>
+</body>
+</html>

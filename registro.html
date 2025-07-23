@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <main class="registro-container">
+        <form id="registroForm">
+            <h2>Crear Usuario</h2>
+            <input type="text" id="nuevoUsuario" placeholder="Usuario" required />
+            <input type="email" id="email" placeholder="Correo electrónico" required />
+            <input type="password" id="nuevaPassword" placeholder="Contraseña (mínimo 6 letras y 2 números)" required />
+            <button type="submit">Registrarme</button>
+        </form>
+    </main>
+
+    <script>
+        const registroForm = document.getElementById("registroForm");
+
+        registroForm.addEventListener("submit", e => {
+            e.preventDefault();
+
+            const usuario = document.getElementById("nuevoUsuario").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("nuevaPassword").value.trim();
+
+            if (!/^(?=.*\d.*\d)[A-Za-z\d]{8,}$/.test(password)) {
+                Swal.fire("Error", "La contraseña debe tener mínimo 6 letras y 2 números.", "error");
+                return;
+            }
+
+            let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+            if (usuarios.find(u => u.usuario === usuario)) {
+                Swal.fire("Usuario existente", "Ya existe un usuario con ese nombre.", "warning");
+                return;
+            }
+
+            usuarios.push({ usuario, email, password });
+            localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
+            Swal.fire("¡Registrado!", "Ya podés iniciar sesión.", "success").then(() => {
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+</body>
+
+</html>
