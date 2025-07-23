@@ -21,9 +21,4 @@ Este proyecto simula un ecommerce de cursos espirituales donde el usuario puede 
 
 ---
 
-## 🚀 Cómo ejecutar
-
-1. Clonar el repositorio o descargar el ZIP.
-
-```bash
-git clone https://github.com/TU_USUARIO/ProyectoFinalGerman.git
+## 🚀
